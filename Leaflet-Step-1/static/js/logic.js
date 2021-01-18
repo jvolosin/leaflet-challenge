@@ -14,12 +14,12 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: API_KEY
 }).addTo(myMap);
 
+var usgsURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-// Load in geojson data
-//var usgsURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
+//Request Data
+d3.json(usgsURL, function(data) {
+  createFeatures(data.features);
+});
 
-// Grab data with d3
-//d3.json(usgsURL, function(response) {
-
-    //console.log(response);
