@@ -13,3 +13,13 @@ html {
 body { 
   background-color: #33FFC3;
 }
+
+.legend i {
+  width: 20px;
+  height: 20px;
+ }
+
+.legend {
+  padding: 10px 10px;
+  background-color: #33FFC3;
+}
