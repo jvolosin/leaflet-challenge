@@ -8,3 +8,8 @@ body,
 html {
   height: 100%;
 }
+
+.leaflet-popup-content-wrapper,
+body { 
+  background-color: #33FFC3;
+}
